@@ -1,0 +1,50 @@
+
+$dark-mode:black;
+$light-mode:white;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.nav-links{
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background: $light-mode;
+border-bottom: 1px solid $dark-mode;
+  top: 0;
+    .logo{
+      color: red;
+      text-decoration: none;
+      padding-right: 2rem;
+      height: 1.5rem;
+    }
+}
+.active{
+  color: $light-mode;
+  text-decoration: underline;
+  background: blue;
+  border-radius: 5px;
+  
+}
+.link{
+  margin: 0 1rem;
+  text-decoration: none;
+  padding: 5px 15px; 
+
+}
+
+
+.icon{
+  height: 1.5rem;
+  margin: 0 .75rem;
+  :hover{
+    cursor: pointer;
+  }
+}
+
+.p-1{
+  padding: 1rem;
+}
