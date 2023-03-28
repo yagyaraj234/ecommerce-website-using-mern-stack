@@ -1,0 +1,37 @@
+$light-blue:#5565cb;
+
+.slider{
+    height: 100vh;
+    width: 98.7vw;
+}
+.slider-parent{
+    top: 2;
+    position: relative;
+    .slider-btn{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        h3{
+            font-size: 2rem;
+        }
+        h1{
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        .Button{
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            border: none;
+            text-decoration: none;
+            color: white;
+            background-color: $light-blue;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .Button:hover{
+                background: black;
+                cursor: pointer; 
+        }
+    }
+}

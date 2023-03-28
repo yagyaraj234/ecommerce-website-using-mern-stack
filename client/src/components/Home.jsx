@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import {Slider} from './index'
 
 export const Home = () => {
   return (
-    <div className='p-1'>
-        This is Home
+    <div className=''>
+      <Slider></Slider>
+      
+        
     </div>
   )
 }
