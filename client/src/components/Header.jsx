@@ -1,6 +1,7 @@
 import React from 'react';
-import {BrowserRouter, Routes,Route,NavLink,Link} from 'react-router-dom';
-import {Contact, About, NewCollection, Shop,Home} from './index';
+import {BrowserRouter, Routes,Route,NavLink} from 'react-router-dom';
+import {Contact, About, NewCollection, Shop,Home, Account} from './index';
+// Icons from Heroicons
 import { MagnifyingGlassIcon, HeartIcon,ShoppingCartIcon } from '@heroicons/react/24/solid'
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
         {/* <Link to=''></Link> */}
         <NavLink className='btns'>Help & FAQs </NavLink>
         <span className='btns'>|</span>
-        <NavLink className='btns '>My Account</NavLink>
+        <NavLink className='btns' to='/account'>My Account</NavLink>
       </div>
     </div>
     <div className='nav-links'>   
@@ -43,6 +44,8 @@ const Header = () => {
             <Route path='/shop' element={<Shop/>}></Route>
             <Route path='/new-collection' element={<NewCollection/>}></Route>
             <Route path='/about' element={<About/>}></Route>
+            <Route path='/contact' element={<Contact/>}></Route>
+            <Route path='/account' element={<Account/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>
         
     </Routes>

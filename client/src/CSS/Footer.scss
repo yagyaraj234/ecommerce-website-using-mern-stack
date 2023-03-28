@@ -1,0 +1,65 @@
+.footer-box{
+    background: #222222;
+    display:  grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: auto auto;
+    padding: 2rem 3rem;
+    h4{
+        font-size:18px ;
+        font-weight: 400;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #717FE0;
+        width: 8rem;
+        color: white;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    .footer-link{
+        text-decoration: none;
+        color: white;
+        margin: 5px 0;
+        font-size: 16px;
+        color: gray;
+    }
+    p{
+        margin-top: 7px;
+        color: white;
+        b{
+            color: gray;
+        }
+    }
+
+    .input-field{
+        padding: 10px 0;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid white;
+        font-size: 15px;
+        display: block;
+    }
+
+    .input-field:focus{
+        outline: none;
+        color:white;
+    }
+    .btns{
+        padding: .8rem 1.2rem;
+        background: #5565cb;
+        border: none;
+        border-radius: 10px;
+        margin-top: 2rem;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .btns:hover{
+        cursor: pointer;
+    }
+    }
+
+    .bottom-box{
+        grid-row: 1/3;
+    }
+    
+}
