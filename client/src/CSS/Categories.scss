@@ -1,0 +1,22 @@
+
+.categ-box{
+    display: grid;
+    // padding: 0 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin: 2rem;
+    position: relative;
+
+    .box{
+
+        border: 1px solid black;
+
+        .catog-img{
+            height: 15rem;
+        }
+        .text{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    }
+}

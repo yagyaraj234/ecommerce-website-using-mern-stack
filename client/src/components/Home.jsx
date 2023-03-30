@@ -1,11 +1,12 @@
 import React from 'react';
-import {Slider,Footer} from './index'
+import {Slider,Footer,Categories} from './index'
 
 export const Home = () => {
   return (
-    <div className=''>
+    <div >
       <Slider></Slider>
-      <Footer></Footer>   
+      <Categories/>  
+      <Footer></Footer> 
     </div>
   )
 }
