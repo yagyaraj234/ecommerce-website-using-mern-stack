@@ -99,7 +99,8 @@ export const loginController = async (req, res) => {
       user:{
         name:user.name,
         email:user.email,
-      }
+      },
+      token
     })
   } catch (error) {
     console.log(error);
@@ -110,3 +111,10 @@ export const loginController = async (req, res) => {
     });
   }
 };
+
+
+// test controller
+export const testController =(req,res) =>{
+  // console.log('protected route')
+  res.send('Protected route');
+}
