@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Layout from '../../components/Layout/Layout'
 import { toast } from 'react-toastify';
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
@@ -11,7 +11,7 @@ const Register = () => {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [number, setNumber] = useState('');
+    const [phone, setPhone] = useState('');
     const [password, setPassword] = useState('');
     const [address, setAddress] = useState('');
 
@@ -20,7 +20,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`${process.env.REACT_APP_API}/api/v1/auth/register`, name, email, password, number, address);
+            const res = await axios.post('/api/v1/auth/register', {name, email, password, phone, address});
             if (res.data.success) {
                 toast.success('res.data.message')
                 navigate('/login');
@@ -32,11 +32,7 @@ const Register = () => {
             console.assert.log(error)
             toast.error('Something went Wrong')
         }
-
-
     }
-
-
     return (
         <Layout>
 
@@ -82,8 +78,8 @@ const Register = () => {
                             id="exampleInputName"
                             placeholder='Enter your Phone Number'
                             required
-                            value={number}
-                            onChange={(e) => setNumber(e.target.value)}
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
 
                         />
                     </div>
@@ -98,11 +94,8 @@ const Register = () => {
                             onChange={(e) => setAddress(e.target.value)}
                         />
                     </div>
-                    <div className="mb-3 form-check">
-                        <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                        <label className="form-check-label" htmlFor="exampleCheck1">
-                            Accept terms & Conditions
-                        </label>
+                    <div>
+                        <p>If you have already registered <Link className='LINK' to='/login'>Login Now</Link> </p>
                     </div>
                     <button type="submit" className="btn btn-primary">
                         Register
