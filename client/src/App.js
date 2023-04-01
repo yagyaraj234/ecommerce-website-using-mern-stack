@@ -1,11 +1,24 @@
 import './App.scss';
-import {Header, Home} from './components/index'
+import {Routes,Route} from 'react-router-dom'
+import { Home,Shop,NewCollection,About,Account,Contact } from './pages/Pages';
+import Register from './pages/Auth/Register';
+import Login from './pages/Auth/Login';
 
 function App() {
   return (
     <div className='App'>
-     <Header/>
-    </div>
+     <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/shop' element={<Shop />}></Route>
+          <Route path='/new-collection' element={<NewCollection />}></Route>
+          <Route path='/about' element={<About />}></Route>
+          <Route path='/contact' element={<Contact />}></Route>
+          <Route path='/account' element={<Account />}></Route>
+          <Route path='/register' element={<Register />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+
+        </Routes>
+     </div>
   );
 }
 
