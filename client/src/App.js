@@ -3,7 +3,7 @@ import {Routes,Route} from 'react-router-dom'
 import { Home,Shop,NewCollection,About,Account,Contact,Register,PageNotFound,Login } from './pages/Pages';
 function App() {
   return (
-    <div className='App'>
+    <div >
      <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/shop' element={<Shop />}></Route>
