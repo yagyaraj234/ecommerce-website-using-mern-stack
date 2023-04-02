@@ -13,8 +13,8 @@ const Header = () => {
             <NavLink className='btns' to='/account'>My Account</NavLink>
           </div>
         </div>
-        <div className='nav-links'>
-          <div>
+        <div className='navbar'>
+          <div className='nav-links'>
             <img className='logo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/900px-Instagram_logo_2022.svg.png?20220518162235" alt="Logo" />
             <NavLink className='link' to='/'>Home</NavLink>
             <NavLink className='link' to='/shop'>Shop</NavLink>

@@ -13,9 +13,12 @@ $light-blue:#5565cb;
 }
 // Header
 
+
+
 .shipping{
-  padding: .4rem;
+  padding: .1rem;
   background: black;
+  height: 1.5rem;
   display: flex;
   justify-content: space-around;
   p{
@@ -39,19 +42,21 @@ $light-blue:#5565cb;
 
 
 
-
-.nav-links{
+.navbar{
   padding: .5rem 2rem;
   padding-bottom: .8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  // background: $light-mode;
-  background-color: transparent;
+  background: $light-mode;
+  background-color: white;
   border-bottom: 1px solid $dark-mode;
   top: 0;
   z-index: 1;
+}
+
+.nav-links{
     .logo{
       text-decoration: none;
       padding-right: 2rem;
@@ -85,6 +90,25 @@ $light-blue:#5565cb;
     background-color: red;
   }
   
+}
+
+
+@media  screen and (max-width:1080px){
+  .shipping {
+    display: none;
+  }
+  .nav-links{
+    display: none;
+  }
+  .link{
+    display: none;
+  }
+  .navbar{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    justify-content: end;
+  }
 }
 
 .LINK{

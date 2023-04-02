@@ -1,9 +1,6 @@
 import './App.scss';
 import {Routes,Route} from 'react-router-dom'
-import { Home,Shop,NewCollection,About,Account,Contact } from './pages/Pages';
-import Register from './pages/Auth/Register';
-import Login from './pages/Auth/Login';
-
+import { Home,Shop,NewCollection,About,Account,Contact,Register,PageNotFound,Login } from './pages/Pages';
 function App() {
   return (
     <div className='App'>
@@ -16,6 +13,7 @@ function App() {
           <Route path='/account' element={<Account />}></Route>
           <Route path='/register' element={<Register />}></Route>
           <Route path='/login' element={<Login />}></Route>
+          <Route path='*' element={<PageNotFound />}></Route>
 
         </Routes>
      </div>
