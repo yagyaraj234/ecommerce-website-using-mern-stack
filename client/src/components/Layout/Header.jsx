@@ -14,8 +14,9 @@ const Header = () => {
           </div>
         </div>
         <div className='navbar'>
+        <img className='logo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/900px-Instagram_logo_2022.svg.png?20220518162235" alt="Logo" />
           <div className='nav-links'>
-            <img className='logo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/900px-Instagram_logo_2022.svg.png?20220518162235" alt="Logo" />
+            
             <NavLink className='link' to='/'>Home</NavLink>
             <NavLink className='link' to='/shop'>Shop</NavLink>
             <NavLink className='link highlight' to='/new-collection'>New Collection

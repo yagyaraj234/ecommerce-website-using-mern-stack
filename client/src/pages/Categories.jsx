@@ -4,10 +4,11 @@ import '../CSS/Categories.scss';
 import men from '../Product images/Categoreis/Categ1.jpg'
 import women from '../Product images/Categoreis/Categ2.jpg'
 import Assesories from '../Product images/Categoreis/Categ3.jpg'
+import Layout from '../components/Layout/Layout';
 
 const Categories = () => {
   return (
-    <div className='categ-box'>
+    <Layout className='categ-box'>
 
             <div className="box">
                 <img className='catog-img' src={men} alt="men" />
@@ -24,7 +25,7 @@ const Categories = () => {
             
 
 
-    </div>
+    </Layout>
   )
 }
 

@@ -5,7 +5,7 @@ import Layout from '../components/Layout/Layout';
 export const Home = () => {
   return (
     <Layout >
-      {/* <Slider></Slider> */}
+      <Slider></Slider>
     </Layout>
   )
 }

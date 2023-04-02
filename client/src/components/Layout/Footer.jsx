@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return (
+        <div className="footer">
         <div className='footer-box'>
             <div className='box1 box'>
                 <h4>Categories</h4>
@@ -35,6 +36,7 @@ const Footer = () => {
                     <button className='btns'>SUBSCRIBE</button>
                 </form>
             </div>
+        </div>
         </div>
     )
 }

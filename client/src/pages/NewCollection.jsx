@@ -1,8 +1,9 @@
 import React from 'react'
+import Layout from '../components/Layout/Layout'
 
 const NewCollection = () => {
   return (
-    <div>NewCollection</div>
+    <Layout>NewCollection</Layout>
   )
 }
 

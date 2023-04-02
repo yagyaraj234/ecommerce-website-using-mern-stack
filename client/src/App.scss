@@ -6,16 +6,19 @@ $light-blue:#5565cb;
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
 
+// font-family: 'Playfair Display', serif;
+// font-family: 'Poppins', sans-serif;
+
 
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 // Header
-
-
-
 .shipping{
+  font-family:'poppins','sans-serif';
   padding: .1rem;
   background: black;
   height: 1.5rem;
@@ -39,32 +42,26 @@ $light-blue:#5565cb;
     color: $light-blue;
   }
 }
-
-
-
 .navbar{
-  padding: .5rem 2rem;
+  padding: .5rem 0rem;
   padding-bottom: .8rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: sticky;
   background: $light-mode;
-  background-color: white;
   border-bottom: 1px solid $dark-mode;
   top: 0;
   z-index: 1;
-}
-
-.nav-links{
-    .logo{
-      text-decoration: none;
-      padding-right: 2rem;
-      height: 1.5rem;
-    }
+   overflow: hidden;
+  .logo{
+    text-decoration: none;
+    padding-right: 2rem;
+    height: 1.5rem;
+  }
 }
 .link{
-  margin: 0 1rem;
+  padding: 0 1rem;
   text-decoration: none;
   padding: 5px 15px; 
   color: black;
@@ -88,8 +85,7 @@ $light-blue:#5565cb;
     color: white;
     margin-top: 8px;
     background-color: red;
-  }
-  
+  }  
 }
 
 
@@ -104,10 +100,10 @@ $light-blue:#5565cb;
     display: none;
   }
   .navbar{
-    padding: 0;
+    padding: 0 1rem;
     margin: 0;
     width: 100vw;
-    justify-content: end;
+    justify-content: space-between;
   }
 }
 
