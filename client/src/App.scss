@@ -44,20 +44,19 @@ $light-blue:#5565cb;
 }
 .navbar{
   padding: .5rem 0rem;
-  padding-bottom: .8rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: sticky;
   background: $light-mode;
-  border-bottom: 1px solid $dark-mode;
+  // border-bottom: 1px solid $dark-mode;
   top: 0;
   z-index: 1;
    overflow: hidden;
   .logo{
     text-decoration: none;
     padding-right: 2rem;
-    height: 1.5rem;
+    height: 2.5rem;
   }
 }
 .link{
