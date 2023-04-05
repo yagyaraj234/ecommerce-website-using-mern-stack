@@ -1,25 +1,44 @@
-import {useState, useEffect, useContext, createContext, Children} from 'react'
+import {
+  useState,
+  useEffect,
+  useContext,
+  createContext,
+  Children,
+} from "react";
+import axios from "axios";
 
-const AuthContext=createContext();
+const AuthContext = createContext();
 
+const AuthProvider = () => {
+  const [auth, setAuth] = useState({
+    user: null,
+    token: "",
+  });
 
-const AuthProvider =()=>{
-    const [auth, setAuth] = useState({
-        user:null,
-        token:""
-    })
-    
-    return (
-        <AuthContext.Provider value ={[auth,setAuth]}>
-            {Children}
-        </AuthContext.Provider>
-    )
-}
+  axios.defaults.headers.common["Authorization"] = auth?.token;
+
+  useEffect(() => {
+    const data = localStorage.getItem("auth");
+    if (data) {
+      const parseData = JSON.parse(data);
+      setAuth({
+        ...auth,
+        user: parseData.user,
+        token: parseData.token,
+      });
+    }
+  });
+  return (
+    <AuthContext.Provider value={[auth, setAuth]}>
+      {Children}
+    </AuthContext.Provider>
+  );
+};
 
 // custom hook
 
-const useAuth = ()=>{
-    useContext(AuthContext)
-}
+const useAuth = () => {
+  useContext(AuthContext);
+};
 
-export {useAuth,AuthProvider}
+export { useAuth, AuthProvider };
