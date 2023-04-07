@@ -11,9 +11,9 @@ function App() {
         <Route path="/new-collection" element={<NewCollection />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/account" element={<PrivateRoute/>}>
-          <Route path="" element={<Account/>}/>
-        </Route>
+        {/* <Route path="/account" element={<PrivateRoute/>}> */}
+          <Route path="/account" element={<Account/>}/>
+        {/* </Route> */}
         <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="*" element={<PageNotFound />}></Route>

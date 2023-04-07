@@ -1,0 +1,63 @@
+@media  screen and (min-width:375px){
+
+    .user-dashboard{
+
+        padding: 4rem 0 4rem 0;
+        .user-icon{
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 7vh;
+            width: 15vw;
+            margin: auto;
+        }
+        .user-details{
+            text-align: center;
+            padding: none;
+
+            .name{
+                margin-top: 1rem;
+            }
+
+
+            .name ,.number , .email{
+                margin:2px  auto;
+                width: 40vw;
+
+                .edit-icon{
+                    height: 2vh;
+                    margin-bottom: 4px;
+                    opacity: 70%;
+                }
+            }
+            
+        }
+
+        .left-dashboard ul {
+
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            grid-row-gap: 1rem;
+            margin: 3rem 0 5px 0;
+
+            .link-box{
+                color: white;
+                background: rgb(122, 113, 113);
+                text-decoration: none;
+                font-size: 18px;
+                padding: 5px;
+                margin-right: 2rem;
+                border-radius: 5px;
+                
+            }
+            .link-box:hover{
+                cursor: pointer;
+            }
+            
+        }
+
+    }
+
+}
