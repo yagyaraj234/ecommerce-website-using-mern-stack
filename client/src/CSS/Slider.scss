@@ -35,3 +35,26 @@ $light-blue:#5565cb;
         }
     }
 }
+
+@media  screen and (min-width:375px){
+    .slider-parent{
+
+        .slider{
+            width: 100vw;
+            height: 40vh;
+        }
+        .slider-btn{
+            h3{
+                font-size:16px;
+            }
+
+            h1{
+                font-size: 2rem;
+            }
+            .Button{
+                font-size: 12px;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
