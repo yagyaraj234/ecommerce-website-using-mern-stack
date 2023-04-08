@@ -9,11 +9,11 @@ const Account = () => {
     <Layout title='user-dashboard'>
 
       <div className="user-dashboard">
-
+      <div className="user-details">
         <div className="user-icon">
           <UserIcon></UserIcon>
         </div>
-        <div className="user-details">
+        
           <p className='name'>Rakshit <PencilSquareIcon className='edit-icon'/></p>
           <p className='number'>587987527 <PencilSquareIcon className='edit-icon'/></p>
           <p className='email'>test@test.com <PencilSquareIcon className='edit-icon'/> </p>
@@ -27,6 +27,7 @@ const Account = () => {
             <NavLink className='link-box' to='/wallet'>Wallet</NavLink>
             <NavLink className='link-box' to='/saved-address'>Addresses</NavLink>
             <NavLink className='link-box' to='/contact'>Contact us</NavLink>
+            <NavLink className='link-box Logout' to='/login'>Logout</NavLink>
           </ul>
         </div>
 

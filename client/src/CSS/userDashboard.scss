@@ -1,6 +1,62 @@
-@media  screen and (min-width:375px){
+
+@media  screen and (min-width:395px){
+.user-dashboard{
+    padding: 4rem;
+    .user-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+        .user-icon{
+            width: 5rem;
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+        }
+        .name, .number ,.email{
+            font-size: 16px;
+            margin:0;
+        }
+        .edit-icon{
+            width: 1.5rem;
+            margin-bottom: 10px;
+        }
+    }
+    .left-dashboard ul{
+
+        
+        display:grid ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        margin-top: 5rem;
+        .link-box{
+            margin: auto;
+            text-decoration: none;
+            color: white;
+            background: #5565cb;
+            padding: .7rem;
+            width: 10rem;
+            border-radius: .7rem;
+            
+            text-align: center;
+        }
+        .Logout{
+            margin: auto;
+            grid-column: 2/3;
+            width: 100%;
+        }
+    }
+}
+}
+
+
+
+@media  screen and (max-width:395px){
 
     .user-dashboard{
+
 
         padding: 4rem 0 4rem 0;
         .user-icon{
@@ -55,9 +111,16 @@
             .link-box:hover{
                 cursor: pointer;
             }
+            .Logout{
+                grid-column: 1/3;
+                background: slateblue;
+            }
             
         }
-
     }
 
 }
+
+
+
+
