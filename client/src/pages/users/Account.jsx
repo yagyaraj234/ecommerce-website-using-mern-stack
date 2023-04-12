@@ -3,8 +3,11 @@ import Layout from '../../components/Layout/Layout';
 import '../../CSS/userDashboard.scss';
 import { NavLink } from 'react-router-dom';
 import { UserIcon ,PencilSquareIcon } from '@heroicons/react/24/solid';
+import { useAuth } from '../../context/auth';
 
 const Account = () => {
+
+  const [auth,setAuth]=useAuth();
   return (
     <Layout title='user-dashboard'>
 
