@@ -2,12 +2,22 @@ import React from 'react'
 import Layout from '../../components/Layout/Layout';
 import '../../CSS/userDashboard.scss';
 import { NavLink } from 'react-router-dom';
+import { Login } from '../Pages';
 import { UserIcon ,PencilSquareIcon } from '@heroicons/react/24/solid';
 import { useAuth } from '../../context/auth';
 
 const Account = () => {
 
   const [auth,setAuth]=useAuth();
+
+
+  function handleLogOut(){
+    setAuth({
+      ...auth,
+      user:null,token:''
+    })
+    localStorage.removeItem('auth')
+  }
   return (
     <Layout title='user-dashboard'>
 
@@ -30,11 +40,10 @@ const Account = () => {
             <NavLink className='link-box' to='/wallet'>Wallet</NavLink>
             <NavLink className='link-box' to='/saved-address'>Addresses</NavLink>
             <NavLink className='link-box' to='/contact'>Contact us</NavLink>
-            <NavLink className='link-box Logout' to='/login'>Logout</NavLink>
+            <NavLink className='link-box Logout'
+            onClick={handleLogOut} to='/login'>Logout</NavLink>
           </ul>
         </div>
-
-
       </div>
 
     </Layout>
